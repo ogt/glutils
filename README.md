@@ -1,15 +1,14 @@
 glutils
 =====
-==
 [![Build Status](https://travis-ci.org/ogt/glutils.png)](https://travis-ci.org/ogt/glutils)
 
 ## Synopsis
-Utilities to help someone program like Greg Little @dglittle
+Utilities to help someone program like Greg Little http://github.com/dglittle
 
-Based on the dglittle/gl519
+Based on https://github.com/dglittle/gl519
 
 ## Changes
-Here are my changes from the original gl519
+Here are my changes from the original gl519 repo
 
 - pushed the tests in a test subfolder
 - change test output into TAP (prepended OK, NOT OK, or # before each line of output)
