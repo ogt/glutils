@@ -16,17 +16,17 @@ It consists of five distinct sections
 `makeSet`, `inSet`, `setSub`, `bagAdd`, `lerp`, `lerpCap`, `time`, `trim`, `lines`, `sum`, `sample`, `shuffle`,
 `randomInt`, `randomString`, `sort`, `sortDesc`, `toArray`, `ensure`
 
-- glutils-browser :
+- glutils-browser : Browser-specific common helper functions.
 `escapeUnicodeChar`, `escapeString`, `escapeRegExp`, `escapeUrl`, `unescapeUrl`, `escapeXml`, `unescapeXml`,
 `getUrlParams`, `splitHorz`, `splitVert`, `dialog`
 
-- glutils-json : 
+- glutils-json : This set of utilities make it straightforwar to persist whole javascript structures (including pointers, cycles) to a file.
 `decycle`, `recycle`, `json`, `unJson`
 
-- glutils-node
+- glutils-node : Node common helper functions
 `serveOnExpress`, `read`, `write`, `print`, `exit`, `md5`
 
-- glutils_promises
+- glutils_promises : Simple but powerful fibers-based "real" promises
 `run`, `yield`, `p`, `parallel`, `consume`, `wget`
 
 Here is an example of using the promises:
