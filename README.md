@@ -7,6 +7,30 @@ Utilities to help someone code the way Greg Little (dglittle) does.
 Based on https://github.com/dglittle/gl519
 
 ## Description
+This utility library is compiled over the years by Greg Little to support his - minimum dependencies - maximum code lifetime - rely on the language vs the libraries -  unique coding style.
+It consists of five distinct sections
+
+- glutils-js - These are functions that should/could have been part of the javascript language itself. Most of them enable a functional programming style - others are just fixes for well known deficiencies of javascript:
+`has`, `identity`, `each`, `map`, `filter`, `reduce`, `some`, `every`, `min`, `max`, `find`, `range`, `size`,
+`deepEquals`, `keys`, `values`, `merge`, `clone`, `deepClone`, `pairs`, `object`, `pick`, `omit`, `setAdd`,
+`makeSet`, `inSet`, `setSub`, `bagAdd`, `lerp`, `lerpCap`, `time`, `trim`, `lines`, `sum`, `sample`, `shuffle`,
+`randomInt`, `randomString`, `sort`, `sortDesc`, `toArray`, `ensure`
+
+- glutils-browser :
+`escapeUnicodeChar`, `escapeString`, `escapeRegExp`, `escapeUrl`, `unescapeUrl`, `escapeXml`, `unescapeXml`,
+`getUrlParams`, `splitHorz`, `splitVert`, `dialog`
+
+- glutils-json : 
+`decycle`, `recycle`, `json`, `unJson`
+
+- glutils-node
+`serveOnExpress`, `read`, `write`, `print`, `exit`, `md5`
+
+- glutils_promises
+`run`, `yield`, `p`, `parallel`, `consume`, `wget`
+
+Here is an example of using the promises:
+
 ```
     var _ = require('glutils')
     _.run(function () {
