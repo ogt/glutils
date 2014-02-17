@@ -7,6 +7,16 @@ Utilities to help someone program like Greg Little http://github.com/dglittle
 
 Based on https://github.com/dglittle/gl519
 
+## Description
+```
+    var _ = require('glutils')
+    _.run(function () {
+        ...
+        var user = _.p(db.users.findone({ username : username}, _.p()))
+        console.log(user)
+        ...
+    }
+```
 ## Changes
 Here are my changes from the original gl519 repo
 
