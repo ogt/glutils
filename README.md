@@ -3,8 +3,7 @@ glutils
 [![Build Status](https://travis-ci.org/ogt/glutils.png)](https://travis-ci.org/ogt/glutils)
 
 ## Synopsis
-Utilities to help someone program like Greg Little http://github.com/dglittle
-
+Utilities to help someone code the way Greg Little (dglittle) does.
 Based on https://github.com/dglittle/gl519
 
 ## Description
@@ -17,6 +16,11 @@ Based on https://github.com/dglittle/gl519
         ...
     }
 ```
+## Installation
+```
+npm install glutils
+```
+
 ## Changes
 Here are my changes from the original gl519 repo
 
