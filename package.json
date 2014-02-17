@@ -1,0 +1,32 @@
+{
+  "name": "glutils",
+  "description": "The set of the utilities need to program like Greg Little does",
+  "homepage": "https://github.com/ogt/glutils",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ogt/glutils.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/tests.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fibers": "~1.0.1"
+  },
+  "devDependencies": {
+    "tap": "*"
+  },
+  "keywords": [
+    "promises",
+    "fiber",
+    "functional",
+    "parallel"
+  ],
+  "author": {
+    "name": "Greg Little",
+    "email": "glittle@gmail.com",
+    "url": "http://glittle.org/"
+  }
+}
