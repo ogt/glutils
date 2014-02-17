@@ -1,6 +1,9 @@
 // dependencies: jQuery
 // license : public domain
 
+
+// Section : glutils-betterjs
+
 // note to self: new fancy native array methods:
 // forEach
 // map
@@ -390,6 +393,8 @@ _.ensure = function () {
     return _.ensure.apply(null, [prev].concat(args.slice(2)))
 }
 
+// Section : glutils-browser
+
 _.escapeUnicodeChar = function (c) {
     var code = c.charCodeAt(0)
     var hex = code.toString(16)
@@ -539,6 +544,8 @@ _.dialog = function (content) {
     }
 }
 
+// Section : glutils-json
+
 _.decycle = function(o) {
     var rootKey = "root_" + Math.round(Math.random() * 1000)
     var uniqueObj = {}
@@ -654,7 +661,7 @@ _.unJson = function (s) {
     }
 }
 
-// node.js stuff
+// Section : glutils-node
 
 _.serveOnExpress = function (express, app) {
     app.use('/glutils', express.static(__dirname))
@@ -688,6 +695,8 @@ _.exit = function () {
 _.md5 = function (s) {
     return require('crypto').createHash('md5').update(s).digest("hex")    
 }
+
+// Section : glutils-promises
 
 _.run = function (f, x) {
     var Fiber = require('fibers')
