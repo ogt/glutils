@@ -2,7 +2,7 @@
   "name": "glutils",
   "description": "The set of the utilities need to program like Greg Little does",
   "homepage": "https://github.com/ogt/glutils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/ogt/glutils.git"
