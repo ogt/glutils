@@ -22,7 +22,8 @@
     "promises",
     "fiber",
     "functional",
-    "parallel"
+    "parallel",
+    "utils"
   ],
   "author": {
     "name": "Greg Little",
