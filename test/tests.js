@@ -83,6 +83,19 @@ _.run(function () {
     verify(_.deepEquals(_.fold([1, 4, 9], function (a, b) { return a * b }), 1 * 4 * 9))
     verify(_.deepEquals(_.reduce({a:1, b:4, c:9}, function (a, b) { return a + b }), 14))
 
+    testing('_.rename')
+    verify(_.deepEquals(_.rename({a:1,b:2,c:3},{a:'aa',d :'dd'}),{aa:1,b:2,c:3}));
+    verify(_.deepEquals(_.rename({a:1,b:2,c:3},{a:'aa',aa :'bb'}),{aa:1,b:2,c:3}));
+    verify(
+      _.deepEquals(_.rename({a:1,b:2,c:3},{a:'b'}) ,{b:1,c:3}) ||
+      _.deepEquals(_.rename({a:1,b:2,c:3},{a:'b'}) ,{b:2,c:3})
+    );
+    verify(
+      _.deepEquals(_.rename({a:1,b:2,c:3},{a:'z',b:'z'}) ,{z:1,c:3}) ||
+      _.deepEquals(_.rename({a:1,b:2,c:3},{a:'z',b:'z'}) ,{z:2,c:3})
+    );
+
+
     testing('_.min')
     verify(_.min([4, 2, 8], function (e) { return -e }) == 8)
     verify(_.min([4, 2, 8]) == 2)

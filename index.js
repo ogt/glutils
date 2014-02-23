@@ -106,6 +106,12 @@ _.every = _.all = function (o, func) {
     return allGood
 }
 
+_.rename = function(o,d) {
+    var no = {} ; 
+    _.each(o, function(v,k) { no[_.has(d,k) ? d[k] : k] = v;});
+    return no;
+} 
+
 _.min = function (o, func) {
     if (!func) func = _.identity
     var bestScore = null
