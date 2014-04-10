@@ -48,6 +48,13 @@ npm install glutils
 ## Changes
 Here are my changes from the original gl519 repo
 
+02/22/2014
+
+- Added rename function in glutils-js section. (allows renaming of the keys of a hash based on map parameter)
+
+
+02/17/2014 - Initial Commits
+
 - pushed the tests in a test subfolder
 - change test output into TAP (prepended OK, NOT OK, or # before each line of output)
 - disable print() test and exit() tests - they were relying on human observation
