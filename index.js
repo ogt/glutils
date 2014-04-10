@@ -291,6 +291,12 @@ _.bagAdd = function (bag, key, amount) {
     return bag[key]
 }
 
+_.arrayAddNotDup = function(arr,key) {
+    var set = _.makeSet(arr);
+    _.setAdd(set,key);
+    return _.keys(set);
+}
+
 _.lerp = function (t0, v0, t1, v1, t) {
     return (t - t0) * (v1 - v0) / (t1 - t0) + v0
 }

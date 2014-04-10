@@ -13,7 +13,7 @@ It consists of five distinct sections
 - glutils-js - These are functions that should/could have been part of the javascript language itself. Most of them enable a functional programming style - others are just fixes for well known deficiencies of javascript:
 `has`, `identity`, `each`, `map`, `filter`, `reduce`, `some`, `every`, `rename`, `min`, `max`, `find`, `range`, 
 `size`, `deepEquals`, `keys`, `values`, `merge`, `clone`, `deepClone`, `pairs`, `object`, `pick`, `omit`, `setAdd`,
-`makeSet`, `inSet`, `setSub`, `bagAdd`, `lerp`, `lerpCap`, `time`, `trim`, `lines`, `sum`, `sample`, `shuffle`,
+`makeSet`, `inSet`, `setSub`, `bagAdd`, `arrayAddNotDup`, `lerp`, `lerpCap`, `time`, `trim`, `lines`, `sum`, `sample`, `shuffle`,
 `randomInt`, `randomString`, `sort`, `sortDesc`, `toArray`, `ensure`
 
 - glutils-browser : Common helper functions for the browser.

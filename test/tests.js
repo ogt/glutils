@@ -195,6 +195,12 @@ _.run(function () {
     _.bagAdd(b, 'b', -1)
     verify(_.deepEquals(b, {b:0,a:3}))
 
+    testing('_.arrayAddNotDup')
+    verify(_.deepEquals(_.arrayAddNotDup(['a','b'],'c'),['a','b','c']));
+    verify(_.deepEquals(_.arrayAddNotDup(['b','a'],'c'),['b','a','c']));
+    verify(_.deepEquals(_.arrayAddNotDup(['c','b'],'a'),['c','b','a']));
+    verify(_.deepEquals(_.arrayAddNotDup(['c','b'],'b'),['c','b']));
+
     testing('_.lerp')
     verify(_.lerp(0, 0, 1, 1, .5) == .5)
 
